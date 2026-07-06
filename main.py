@@ -1,4 +1,5 @@
 from datetime import datetime
+import random
 
 print("===================================")
 print("        AI Chatbot in Python")
@@ -49,6 +50,17 @@ while True:
 
         else:
             print("Invalid operator.")
+
+    elif user == "joke":
+        jokes = [
+            "Why did the programmer quit his job? Because he didn't get arrays.",
+            "Why do Python programmers wear glasses? Because they can't C.",
+            "Why was the computer cold? It left its Windows open.",
+            "Why did the keyboard go to the doctor? It had too many bugs.",
+            "Why was the math book sad? Because it had too many problems."
+        ]
+
+        print("Chintu:", random.choice(jokes))
 
     elif user == "bye":
         print("Chintu: Goodbye! Have a nice day.")
