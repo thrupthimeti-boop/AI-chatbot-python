@@ -86,6 +86,31 @@ while True:
         except FileNotFoundError:
             print("Chintu: I don't know your name yet. Tell me by typing 'my name is ...'")
 
+   elif user == "motivate":
+        quotes = [
+            "Success is the sum of small efforts repeated every day.",
+            "Believe in yourself. You can achieve great things.",
+            "Every expert was once a beginner.",
+            "Never stop learning because life never stops teaching.",
+            "Dream big, work hard, and stay consistent."
+        ]
+
+        print("Chintu:", random.choice(quotes))
+
+  elif user == "help":
+        print("\n===== Commands =====")
+        print("hi / hello")
+        print("how are you")
+        print("what is your name")
+        print("my name is <your name>")
+        print("what is my name")
+        print("date")
+        print("time")
+        print("calculator")
+        print("joke")
+        print("motivate")
+        print("help")
+        print("bye")
     elif user == "bye":
         print("Chintu: Goodbye! Have a nice day.")
         break
