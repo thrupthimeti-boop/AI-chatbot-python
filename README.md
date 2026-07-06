@@ -1,2 +1,14 @@
-# AI-chatbot-python
-A simple AI chatbot built with Python that can greet users, answer basic questions, tell jokes, and perform simple tasks.
+# AI Chatbot in Python
+
+A beginner-friendly AI chatbot built using Python.
+
+## Features
+- Greeting
+- Conversation
+- Date and Time
+- Calculator
+- Jokes
+- User Memory
+
+## Author
+Thrupthi S Meti
