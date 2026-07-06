@@ -1,3 +1,5 @@
+from datetime import datetime
+
 print("===================================")
 print("        AI Chatbot in Python")
 print("===================================")
@@ -16,6 +18,12 @@ while True:
 
     elif user == "what is your name":
         print("Chintu: My name is Chintu. I am your AI chatbot.")
+
+    elif user == "time":
+        print("Chintu: Current time is", datetime.now().strftime("%I:%M %p"))
+
+    elif user == "date":
+        print("Chintu: Today's date is", datetime.now().strftime("%d %B %Y"))
 
     elif user == "bye":
         print("Chintu: Goodbye! Have a nice day.")
