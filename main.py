@@ -1,5 +1,8 @@
 from datetime import datetime
 import random
+import csv
+
+user_name = ""
 
 print("===================================")
 print("        AI Chatbot in Python")
@@ -61,6 +64,27 @@ while True:
         ]
 
         print("Chintu:", random.choice(jokes))
+
+    elif user.startswith("my name is "):
+        user_name = user[11:].title()
+
+        with open("user.csv", "w", newline="") as file:
+            writer = csv.writer(file)
+            writer.writerow([user_name])
+
+        print(f"Chintu: Nice to meet you, {user_name}!")
+
+    elif user == "what is my name":
+        try:
+            with open("user.csv", "r") as file:
+                reader = csv.reader(file)
+
+                for row in reader:
+                    print(f"Chintu: Your name is {row[0]}.")
+                    break
+
+        except FileNotFoundError:
+            print("Chintu: I don't know your name yet. Tell me by typing 'my name is ...'")
 
     elif user == "bye":
         print("Chintu: Goodbye! Have a nice day.")
